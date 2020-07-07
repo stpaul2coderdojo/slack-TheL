@@ -15,7 +15,7 @@ except:
 
 if not wol_id:
     import sys
-    print 'No config.py found exisiting...'
+    print ('No config.py found exisiting...')
     sys.exit(0)
 
 
