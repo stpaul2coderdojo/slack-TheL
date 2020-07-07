@@ -33,9 +33,7 @@ def thel():
     return Response(''.join(resp_qs),
                     content_type='text/plain; chatset=utf-8')
 
-@app.route('/')
-def hello():
-    return redirect('https://github.com/stpaul2coderdojo/slack-TheL')
+
 
 
 if __name__ == '__main__':
