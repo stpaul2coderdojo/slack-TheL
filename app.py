@@ -6,22 +6,12 @@ from flask import Flask, request, Response, redirect
 
 
 
-try:
-    import config
-    wol_id = config.wolframalpha['PWTW9A-VQL5TVEGPY']
-except:
-    wol_id = os.environ.get('APP_ID')
 
-
-if not wol_id:
-    import sys
-    print ('No config.py found exisiting...')
-    sys.exit(0)
 
 
 app = Flask(__name__)
 
-client = wolframalpha.Client(wol_id)
+client = wolframalpha.Client('PWTW9A-VQL5TVEGPY')
 
 
 @app.route('/thel',methods=['post'])
