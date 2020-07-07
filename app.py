@@ -8,7 +8,7 @@ from flask import Flask, request, Response, redirect
 
 try:
     import config
-    wol_id = config.wolframalpha['app_id']
+    wol_id = config.wolframalpha['PWTW9A-VQL5TVEGPY']
 except:
     wol_id = os.environ.get('APP_ID')
 
@@ -45,7 +45,7 @@ def thel():
 
 @app.route('/')
 def hello():
-    return redirect('https://github.com/vicky002/slack-TheL')
+    return redirect('https://github.com/stpaul2coderdojo/slack-TheL')
 
 
 if __name__ == '__main__':
